@@ -216,6 +216,42 @@ header {
     border: 6px solid #007bff;
     box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
 }
+
+@media (max-width: 640px) {
+    .hero-section {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        padding: 3rem 1.25rem;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .hero-image {
+        order: -1;
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero-text {
+        flex-basis: auto;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(2.2rem, 11vw, 2.8rem);
+    }
+
+    .hero-text p {
+        font-size: 1.05rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
 /* =========================================
     5.ABOUT SECTION
    ========================================= */
@@ -687,6 +723,6 @@ footer {
     padding: 2rem;
     background-color: #222222;
     color: #aaaaaa;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'Fredoka', sans-serif;
 }
